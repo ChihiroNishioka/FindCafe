@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>FindCafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>いちばん近くの、いちばん好きなカフェへ。</h1>
+        <input id="locationInput" type="text" placeholder="地名や駅名で検索">
+        <button id="searchButton">検索</button>
+    </header>
+
+    <div id="results"></div>
+
+    <!-- Hidden map element for Places API -->
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
